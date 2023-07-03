@@ -120,7 +120,7 @@ int PWM_send_past =1000;
       
       motor.setSpeed(120);
 
-      //Serial.print("im here333");
+      //Serial.print("im here");
       
       }
   
@@ -128,11 +128,10 @@ int PWM_send_past =1000;
       
       motor.setSpeed(PWM_send);
 
-      //Serial.println("im hereee");
+      //Serial.println("im here");
       
       }
-
-     
+ 
   
   }
   
