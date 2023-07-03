@@ -50,7 +50,7 @@ int PWM_send_past =1000;
   
     //position = pos_i * 0.46875;
 
-    position = pos_i * 0.4411;
+    position = pos_i * 0.4411;   // how many degrees advances for one pulse; use your Gear ratio and encoder resolution
   
   }
   

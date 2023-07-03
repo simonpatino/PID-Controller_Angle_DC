@@ -8,7 +8,6 @@ float currT = 0;
 float deltaT = 0;
 float prevT = 0;
 float prevE = 0; 
-//float errorValue = 0;
 float errorDerivative = 0;
 float errorIntegral = 0;
 int PWM_p = 0;
