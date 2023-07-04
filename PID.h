@@ -11,25 +11,32 @@ float prevE = 0;
 float errorDerivative = 0;
 float errorIntegral = 0;
 int PWM_p = 0;
+bool key = 1;
 
 
 const float kp = 0.3; 
 const float ki = 0.005; 
 const float kd = 20; 
 
-int goal = 180; //desire angle
+int goal; //desire angle
   
-    int targetPosition(){
+   int targetPosition(){
   
-     while (Serial.available()==0){}  
-  
-     goal = Serial.parseInt(); 
-  
-     Serial.println(goal);
-     
-     return goal; 
-   
-     }
+     while(key){ 
+
+      if (Serial.available()==1){
+        
+        goal = Serial.parseInt();
+
+        Serial.println(goal);
+
+        key = 0;
+        
+        }
+          
+      } 
+      
+    }
 
 
    void calculatePID(){

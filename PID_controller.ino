@@ -18,13 +18,12 @@ void setup() {
 
 void loop() {
 
-  //PID::targetPosition();
+     pid::targetPosition();
   
      pid::calculatePID();
      
      encoder::setMotorSpeed(errorValue);
 
-     pid::graph();
-
-      
+     //pid::graph();
+  
 }
