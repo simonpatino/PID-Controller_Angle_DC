@@ -24,6 +24,6 @@ void loop() {
      
      encoder::setMotorSpeed(errorValue);
 
-     //pid::graph();
+     pid::graph();
   
 }

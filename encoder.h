@@ -92,7 +92,7 @@ int PWM_send_past =1000;
   //velocity: capping the PWM signal - 8 bit
 
 
-    if ((PWM_send +PWM_send_past)/2  < 8){
+    if ((PWM_send +PWM_send_past)/2  < 4){
       
       motor.setSpeed(0);  
 

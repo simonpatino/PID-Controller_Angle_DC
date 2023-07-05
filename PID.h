@@ -81,13 +81,13 @@ int goal; //desire angle
 
     void graph(){
       
-      Serial.print("Constant:");
+      //Serial.print("Constant:");
       
       Serial.print(goal);
 
       Serial.print(",");
 
-      Serial.print("Position:");
+      //Serial.print("Position:");
       
       Serial.print(encoder::position);
 
