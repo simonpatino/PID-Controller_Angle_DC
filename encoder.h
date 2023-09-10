@@ -118,7 +118,7 @@ int PWM_send_past =1000;
 
     else if (PWM_send < 120 && errorValue != 0 ){
       
-      motor.setSpeed(120);
+      motor.setSpeed(140);
 
       //Serial.print("im here");
       

@@ -22,7 +22,7 @@ void loop() {
   
      pid::calculatePID();
      
-     encoder::setMotorSpeed(errorValue);
+     encoder::setMotorSpeed(pid::PWM_p);
 
      pid::graph();
   

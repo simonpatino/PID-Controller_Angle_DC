@@ -14,9 +14,9 @@ int PWM_p = 0;
 bool key = 1;
 
 
-const float kp = 0.3; 
-const float ki = 0.005; 
-const float kd = 20; 
+const float kp = 1; 
+const float ki = 0; 
+const float kd = 0; 
 
 int goal; //desire angle
   
